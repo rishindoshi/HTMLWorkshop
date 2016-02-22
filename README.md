@@ -1,25 +1,6 @@
--> What do we wanna do here?
--> Create one index.html file
-	-> Creating a personal website with the following sections:
-		-> Homepage
-		-> Hobbies
-		-> Favorite Movie/TV Quotes
-		-> Bio/Resume
-		-> Answers to the following questions:
-			-> What is your biggest irrational fear?
--> Create one style.css file
-	-> Design like my rishindoshi.github.io
-	-> Simple light blue boxes for text with font Helvetica
-	-> Pacifico Headers
--> Bootstrap?
--> Host to github?
-
--> Start off with template that they can use in beginner.html
-	-> 
-
 # HTMLWorkshop
 
-## Setup
+## The Beginning
 
 We're going to begin our journey into HTML with the beginner.html file. Let's take a look at the following snippet from the file:
 
