@@ -1,5 +1,10 @@
 # HTMLWorkshop
 
+## Useful Links for this Tutorial
+* https://developer.mozilla.org/en-US/docs/Web/HTML/Element
+* https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes
+* https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_started
+
 ## The Beginning
 
 We're going to begin our journey into HTML with the beginner.html file. Let's take a look at the following snippet from the file:
@@ -79,7 +84,13 @@ ul {
 }
 ```
 
-Note again how if you assign a class to an element, you must but a "." before its name, which is unlike assigning style to a certain tag, such as **ul**
+Note again how if you assign a class to an element, you must but a "." before its name, which is unlike assigning style to a certain tag, such as **ul**.
+
+So, this was a very bare bones introduction into HTML and CSS. Both of the two languages offer a ton of more features that are also really useful, but we won't be able to cover all of them today unfortunately. But, now that we have a basic understanding of how things work, let's start making our personal websites.
+
+## Personal Site
+
+
 
 
 
