@@ -90,6 +90,40 @@ So, this was a very bare bones introduction into HTML and CSS. Both of the two l
 
 ## Personal Site
 
+We're going to be building a personal website with four pages including a home page, a bio/resume page, a favorite movie quotes page, and a miscellaneous page with whatever your heart desires on it. The homepage will link to the the other three pages, and the other three pages will link back to the home page. All the pages are going to have a similar feel to them in terms of design and style, so we'll be making several CSS classes to help us do this.
+
+Let's start with the home.html page. So far we just have a blank html page:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Homepage</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="http://fonts.googleapis.com/css?family=Pacifico%7COpen+Sans:300,400,700" rel="stylesheet" type="text/css"/>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+</body>
+</html>
+```
+
+HOME
+-> First show how to use img tag with src="some link from online"
+-> Then show how to use a tags with src="some file in same dir as home.html"
+-> Then show how to make links cool by turning them into buttons with a nice border, font, and color
+-> Then introduce to div tags and show how to center things on a page with margins and display: block
+
+OTHERS
+-> Show how to make nice textboxes with padding, background color, and Helvetica font
+-> Use ul tags and li tags for lists on the bio page
+
+
+
+
+
+
 
 
 
