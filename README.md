@@ -171,6 +171,7 @@ So, there's a lot of new things going on here. First, set the text-decoration to
 
 As the page stands now, it seems like the link text inside the border is too close to the border. Let's let the text breathe a little by using the **padding** attribute in CSS. Padding allows us to add space in between the text and the border. We can add padding to the top, bottom, left, and right of the text like so:
 
+```css
 .link {
 	padding-right: 30px;
 	padding-left: 30px;
