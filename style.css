@@ -7,15 +7,27 @@
 	width: 20%;
 }
 
-.sectionHead {
-	font-family: Helvetica;
-	font-size: 3.5em;
-	margin-left: 76px;
-}
-
-h3 {
+.movieQuote {
+	border: 1px solid #e8e8e8;
+	border-radius: 3px;
+	padding: 20px 10px 20px 10px;
+	margin-bottom: 20px;
+	background-color: #eef;
 	font-family: Helvetica;
 	font-weight: 200;
+	color: black;
+	font-size: 16px;
+	width: 40%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.quoteHeader {
+	font-family: Pacifico;
+	font-weight: 200;
+	margin-bottom: 20px;
+	text-align: center;
 }
 
 .link {
