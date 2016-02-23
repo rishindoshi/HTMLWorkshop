@@ -90,7 +90,7 @@ Note again how if you assign a class to an element, you must but a "." before it
 
 So, this was a very bare bones introduction into HTML and CSS. Both of the two languages offer a ton of more features that are also really useful, but we won't be able to cover all of them today unfortunately. But, now that we have a basic understanding of how things work, let's start making our personal websites.
 
-## Personal Site
+## Building our First Site
 
 We're going to be building a personal website with four pages including a home page, a bio/resume page, a favorite movie quotes page, and a miscellaneous page with whatever your heart desires on it. The homepage will link to the the other three pages, and the other three pages will link back to the home page. All the pages are going to have a similar feel to them in terms of design and style, so we'll be making several CSS classes to help us do this. We'll build the homepage and the movie quotes together, and then you should be able to use what you learned to build the other two pages.
 
@@ -286,6 +286,7 @@ So, that's a pretty basic intro into HTML/CSS. I'd definitely suggest using the 
 
 Try going to http://startbootstrap.com/template-categories/all/. Here you'll find several website templates that you can download for free and customize to your heart's content. Try downloading a theme that you like into a directory of your choosing and open up the index.html file in your browser. You'll see an extremely nice and well fleshed out site with generic content. You can go into the index.html file and edit the content to make the site personal to you. Take 10-15 minutes to customize one of the themes to make it your personal website. You can also edit or add your own CSS if you don't like how a particular element on the page is currently styled. 
 
+As of now, we can only view the webpage we just created on our own machine. What we want is for the whole world to see it, so we need some way of hosting the webpage on the internet, publically accessible to everyone. Luckily, github makes this really easy for us in just a few simple steps. Visit https://pages.github.com/ and follow the steps and your website should be online almost immediately!
 
 
 
