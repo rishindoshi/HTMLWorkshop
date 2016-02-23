@@ -12,11 +12,11 @@
 	border-radius: 3px;
 	padding: 20px 10px 20px 10px;
 	margin-bottom: 20px;
-	background-color: #eef;
+	background-color: #B9B9E2;
 	font-family: Helvetica;
 	font-weight: 200;
 	color: black;
-	font-size: 16px;
+	font-size: 15px;
 	width: 40%;
 	margin-left: auto;
 	margin-right: auto;
@@ -28,6 +28,11 @@
 	font-weight: 200;
 	margin-bottom: 20px;
 	text-align: center;
+	color: white;
+}
+
+.quotesPage {
+	background-image: url("https://i.ytimg.com/vi/2LoaD6tTB08/maxresdefault.jpg");
 }
 
 .link {
@@ -67,18 +72,6 @@
 	font-style: bold;
 	margin-left: 2%;
 	margin-top: 1%;
-}
-
-.content {
-	border: 1px solid #e8e8e8;
-	border-radius: 3px;
-	padding: 10px 10px 10px 10px;
-	margin-bottom: 20px;
-	background-color: #eef;
-	font-family: Helvetica;
-	font-weight: 200;
-	color: black;
-	font-size: 14px;
 }
 
 

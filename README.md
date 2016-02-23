@@ -235,32 +235,39 @@ Now that our homepage is looking moderately fresh, let's move on to the favorite
 
 ```html
 <body>
-	<h3 class="quoteHeader"> My Favorite Movie Quotes EVER!!!!! </h3>
-	<div class="movieQuote">
-		"Let's put a smile on that face!" - The Joker from the The Dark Knight
-	</div>
-	<div class="movieQuote">
-		"I like to picture Jesus in a tuxedo T-Shirt because it says I want to be formal, but I'm here to party." - Cal Jr. from Talladega Nights
-	</div>
-	<div class="movieQuote">
-		"There were horses, and a man on fire, and I killed a guy with a trident!" - Brick Tamland from Anchorman
-	</div>
-	<div class="movieQuote">
-		"I would like to extend to you an invitation to the pants party." - Brick Tamland from Anchorman
-	</div>
-	<div class="movieQuote">
-		"Anyone can cook!" - Chef Gusteau from Ratatouille
+	<div class="quotesPage">
+		<h3 class="quoteHeader"> My Favorite Movie Quotes EVER!!!!! </h3>
+		<div class="movieQuote">
+			"Let's put a smile on that face!" - The Joker from the The Dark Knight
+		</div>
+		<div class="movieQuote">
+			"I like to picture Jesus in a tuxedo T-Shirt because it says I want to be formal, but I'm here to party." - Cal Jr. from Talladega Nights
+		</div>
+		<div class="movieQuote">
+			"There were horses, and a man on fire, and I killed a guy with a trident!" - Brick Tamland from Anchorman
+		</div>
+		<div class="movieQuote">
+			"I would like to extend to you an invitation to the pants party." - Brick Tamland from Anchorman
+		</div>
+		<div class="movieQuote">
+			"Anyone can cook!" - Chef Gusteau from Ratatouille
+		</div>
 	</div>
 </body>
 ```
-I'm using a new tag here called the **div** tag. **Div** tags don't have any special meaning in HTML, they're just used to assign style to a certain portion of text. For example, I wanted to give style to each of the above quotes, so I just put them inside a **div** tag so I could assign a class to them and therefore style the elements. Let's add style for the two new classes created above, **quoteHeader** and **movieQuote**:
+I'm using a new tag here called the **div** tag. **Div** tags don't have any special meaning in HTML, they're just used to assign style to a certain portion of text. For example, I wanted to give style to each of the above quotes, so I just put them inside a **div** tag so I could assign a class to them and therefore style the elements. We add the outer **<div class="quotesPage">** to surround both the heading and the quotes so we can put a background image over the entire page. Let's add style for the three new classes created above, **quoteHeader**, **movieQuote**, and **quotesPage**:
 
 ```css
+.quotesPage {
+	background-image: url("https://i.ytimg.com/vi/2LoaD6tTB08/maxresdefault.jpg");
+}
+
 .quoteHeader {
 	font-family: Pacifico;
 	font-weight: 200;
 	margin-bottom: 20px;
 	text-align: center;
+	color: white;
 }
 
 .movieQuote {
@@ -268,11 +275,11 @@ I'm using a new tag here called the **div** tag. **Div** tags don't have any spe
 	border-radius: 3px;
 	padding: 20px 10px 20px 10px;
 	margin-bottom: 20px;
-	background-color: #eef;
+	background-color: #B9B9E2;
 	font-family: Helvetica;
 	font-weight: 200;
 	color: black;
-	font-size: 16px;
+	font-size: 15px;
 	width: 40%;
 	margin-left: auto;
 	margin-right: auto;
@@ -280,7 +287,7 @@ I'm using a new tag here called the **div** tag. **Div** tags don't have any spe
 }
 ```
 
-Most of the above attributes should look pretty familiar from the homepage style. We again use **auto** margins to center everything and we have a nice shade of light blue in our text boxes. Definitely feel free to change up the values and colors to see what you like best.
+Most of the above attributes should look pretty familiar from the homepage style. We again use **auto** margins to center everything and we have a nice shade of light blue in our text boxes. Definitely feel free to change up the values and colors to see what you like best. The new attribute we used is **background-image**, which again is pretty self-explanatory. We just give CSS a URL and it applies the image at that URL to be the background of all the elements that are contained within its corresponding class tag.
 
 So, that's a pretty basic intro into HTML/CSS. I'd definitely suggest using the skills we learned today to complete the bio and miscellaneous portions of the website, or add more pages if you want. But, as you can probably see, using HTML/CSS to build more complex websites than the one we built today would get incredibely annoying and tedious. Lucky for web developers, there's a tool called Bootstrap that simplifies the process a lot while still allowing you to customize the website a good deal.
 
