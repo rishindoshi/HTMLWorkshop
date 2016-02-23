@@ -15,7 +15,6 @@ We're going to begin our journey into HTML with the beginner.html file. Let's ta
 <head>
 	<title>Homepage</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
 	<link rel="stylesheet" type="text/css" href="style.css"/>
 </head>
 <body>
@@ -101,7 +100,6 @@ Let's start with the home.html page. So far we just have a blank html page:
 	<title>Homepage</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="http://fonts.googleapis.com/css?family=Pacifico%7COpen+Sans:300,400,700" rel="stylesheet" type="text/css"/>
-	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
 	<link rel="stylesheet" type="text/css" href="style.css"/>
 </head>
 <body>
@@ -134,7 +132,6 @@ and the browser would have directed us to google when we click the link. Alright
 	<title>Homepage</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="http://fonts.googleapis.com/css?family=Pacifico%7COpen+Sans:300,400,700" rel="stylesheet" type="text/css"/>
-	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
 	<link rel="stylesheet" type="text/css" href="style.css"/>
 </head>
 <body>
@@ -142,8 +139,35 @@ and the browser would have directed us to google when we click the link. Alright
 </body>
 </html>
 ```
-Now try opening home.html in your browser and you should be able to click on any of the three links and the browser will take you to an HTML page that solely displays the "FILL ME IN LATER" text. 
+Now try opening home.html in your browser and you should be able to click on any of the three links and the browser will take you to an HTML page that just displays the "FILL ME IN LATER" text. Our homepage looks incredibly dull right now, so let's add some style to our links to spruce the page up a bit. First, let's make all the **a** tags we added above belong to a CSS link class like so:
 
+```html
+<a href="bio.html" class="link"> My Biography </a>
+<a href="quotes.html" class="link"> My Favorite Movie Quotes </a>
+<a href="misc.html" class="link"> Learn s'more about me! </a>
+```
+
+Now we can go to our style.css file and start adding stylistic elements to all the above links. First, let's make the links have a nicer and bigger font, be centered on the page, and put some nice borders on the links. We can edit the style.css like so to accomplish this:
+
+```css
+.link {
+	display: block;
+	text-decoration: none;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	font-size: 16px;
+	font-family: Helvetica;
+	font-weight: 700;
+	border: 1px solid #f15f5d;
+	text-align: center;
+	color: #f15f5d;
+	width: 20%;
+}
+```
+
+So, there's a lot of new things going on here. First, set the text-decoration to none, which gets ride of the default underlines under all links in HTML. We then set the left and right margins of each the links to **auto**. This tells the browser that, whatever the width of the screen, I want even margins on both the left and the right side of the element, effectively centering it. We also set the font size, weight, and family to be more appealing. For the boder attribute, we specified three things. The first is 1px which is the thickness of the border, followed by a solid line border, followed by the color of the border.
 
 HOME
 -> First show how to use img tag with src="some link from online"
