@@ -255,6 +255,7 @@ Now that our homepage is looking moderately fresh, let's move on to the favorite
 	</div>
 </body>
 ```
+
 I'm using a new tag here called the **div** tag. **Div** tags don't have any special meaning in HTML, they're just used to assign style to a certain portion of text. For example, I wanted to give style to each of the above quotes, so I just put them inside a **div** tag so I could assign a class to them and therefore style the elements. We add the outer **<div class="quotesPage">** to surround both the heading and the quotes so we can put a background image over the entire page. Let's add style for the three new classes created above, **quoteHeader**, **movieQuote**, and **quotesPage**:
 
 ```css
@@ -293,11 +294,102 @@ So, that's a pretty basic intro into HTML/CSS. I'd definitely suggest using the 
 
 ## Bootstrap
 
-Try going to http://startbootstrap.com/template-categories/all/. Here you'll find several website templates that you can download for free and customize to your heart's content. Try downloading a theme that you like into a directory of your choosing and open up the index.html file in your browser. You'll see an extremely nice and well fleshed out site with generic content. You can go into the index.html file and edit the content to make the site personal to you. Take 10-15 minutes to customize one of the themes to make it your personal website. You can also edit or add your own CSS if you don't like how a particular element on the page is currently styled. 
+Try going to http://startbootstrap.com/template-categories/all/. Here you'll find several website templates that you can download for free and customize to your heart's content. Try downloading a theme that you like into a directory of your choosing and open up the index.html file in your browser. You'll see an extremely nice and well fleshed out site with generic content. You can go into the index.html file and edit the content to make the site personal to you. Take 10-15 minutes to customize one of the themes to make it your personal website. You can also edit or add your own CSS if you don't like how a particular element on the page is currently styled.
+
+One of the nicest features of Bootstrap is the column feature. Often times, it's really annoying to precisly positon HTML elements on a webpage using just CSS. So, Bootstrap came up with a useful, but kind of confusing, system for arranging elements of your HTML into columns on the page. Let's create two new files called columns.html and columns.css and paste the following HTML into columns.html:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Homepage</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="columns.css"/>
+</head>
+<body>	
+	
+</body>
+</html>
+```
+
+Boostrap is basically a library of pre-built CSS classes, just like the ones we built above, that we can assign to any of our HTML elements. There are a lot of useful classes that Bootstrap has to offer, but we'll be covering the ones that have to do with creating columns. The Boostrap system uses 12 columns to describe a webpage. We can make elements in HTML that extened any number of columns wide between 1 and 12 like so:
+
+```html
+<body>	
+	<div class="col-lg-6 firstCol">
+		HI
+	</div>
+	<div class="col-lg-6 secondCol">
+		YO
+	</div>
+</body>
+```
+
+```css
+.firstCol {
+	background-color: blue;
+	height: 200px;
+}
+.secondCol {
+	background-color: red;
+	height: 200px;
+}
+```
+
+What we did here is create two columns, using the Bootstrap **col-lg-6** class, each of length six, so that together they take up the width of the entire page. Since 12 columns is equal to the width of the page, and we created two sections of size 6 columns each, we fill up the entire width of the page. I also added our own classes here and put background-colors on each of the columns to accentuate the difference between the sections of the page. The Bootstrap **col** classes dictate the width of an element in HTML, we are free to modify the height of such elements. Here, I made each column have a height of 200px. Already, we can see how a system like this would be useful for compartmentalizing information on a website. For example, if we were creating a website for a newspaper, which is information heavy, we could very easily split up the different sections of the newspaper into columns. We could have a column for sports, a column for world news, etc. Let's create some more columns:
+
+```html
+<body>	
+	<div class="col-lg-6 firstCol">
+		HI
+	</div>
+	<div class="col-lg-6 secondCol">
+		YO
+	</div>
+	<div class="col-lg-1 thirdCol">
+		sup
+	</div>
+	<div class="col-lg-1 fourthCol">
+		whaddup
+	</div>
+	<div class="col-lg-4 fifthCol">
+		hola
+	</div>
+	<div class="col-lg-6 sixthCol">
+		nein
+	</div>
+</body>
+```
+
+```css
+.firstCol {
+	background-color: blue;
+}
+.secondCol {
+	background-color: red;
+}
+.thirdCol {
+	background-color: green;
+	height: 100px;
+}
+.fourthCol {
+	background-color: yellow;
+	height: 100px;
+}
+.fifthCol {
+	background-color: purple;
+	height: 100px;
+}
+.sixthCol {
+	background-color: black;
+	height: 100px;
+}
+```
 
 ## Hosting
 
-As of now, we can only view the webpage we just created on our own machine. What we want is for the whole world to see it, so we need some way of hosting the webpage on the internet, publically accessible to everyone. Luckily, github makes this really easy for us in just a few simple steps. Visit https://pages.github.com/ and follow the steps and your website should be online almost immediately!
+As of now, we can only view the webpage we just created on our own machine. What we want is for the whole world to see it! So, we need some way of hosting the webpage on the internet, publically accessible to everyone. Luckily, github makes this really easy for us in just a few simple steps. Visit https://pages.github.com/ and follow the steps and your website should be online almost immediately!
 
 
 
