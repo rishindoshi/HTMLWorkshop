@@ -186,17 +186,26 @@ Now, if you refresh the page, the links shouldn't look as scrunched up as they u
 }
 ```
 
-This will give us very subtly rounded edges around our border. 
+This will give us very subtly rounded edges around our border. Let's add one more nice feature to our links and invert the color when a user hovers of the links. In CSS, we can specify style changes to elements when the user of the webpage performs a certain action on a certain element. For example, if we did:
 
-HOME
--> First show how to use img tag with src="some link from online"
--> Then show how to use a tags with src="some file in same dir as home.html"
--> Then show how to make links cool by turning them into buttons with a nice border, font, and color
--> Then introduce to div tags and show how to center things on a page with margins and display: block
+```css
+.link:hover {
+	font-size: 90px;
+}
+```
 
-OTHERS
--> Show how to make nice textboxes with padding, background color, and Helvetica font
--> Use ul tags and li tags for lists on the bio page
+it would tell the browser to increase the font-size of the link everytime the user hovers over the link with the mouse. Increasing the font-size is pretty obnoxious though, so let's instead invert the colors of the element like:
+
+```css 
+.link:hover {
+	background-color: #f15f5d;
+	color: white;
+}
+```
+
+So, now when a user hovers their mouse on any of the link boxes, the background-color will turn the light shade of red, and the text color will turn white. This adds a nice user experience effect.
+
+
 
 
 
