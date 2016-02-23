@@ -167,7 +167,26 @@ Now we can go to our style.css file and start adding stylistic elements to all t
 }
 ```
 
-So, there's a lot of new things going on here. First, set the text-decoration to none, which gets ride of the default underlines under all links in HTML. We then set the left and right margins of each the links to **auto**. This tells the browser that, whatever the width of the screen, I want even margins on both the left and the right side of the element, effectively centering it. We also set the font size, weight, and family to be more appealing. For the boder attribute, we specified three things. The first is 1px which is the thickness of the border, followed by a solid line border, followed by the color of the border.
+So, there's a lot of new things going on here. First, set the text-decoration to none, which gets ride of the default underlines under all links in HTML. We then set the left and right margins of each the links to **auto**. This tells the browser that, whatever the width of the screen, I want even margins on both the left and the right side of the element, effectively centering it. We also set the font size, weight, and family to be more appealing. For the boder attribute, we specified three things. The first is 1px which is the thickness of the border, followed by a solid line border, followed by the color of the border. The text-align: center attribute is fairly self-explanatory. I set the color of the border and the text to the hex color **#f15f5d**, which is a light shade of red, but you can change this to anything you like. Just google hex color finder to find the code for the color you like most!
+
+As the page stands now, it seems like the link text inside the border is too close to the border. Let's let the text breathe a little by using the **padding** attribute in CSS. Padding allows us to add space in between the text and the border. We can add padding to the top, bottom, left, and right of the text like so:
+
+.link {
+	padding-right: 30px;
+	padding-left: 30px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+```
+Now, if you refresh the page, the links shouldn't look as scrunched up as they used to. Now, I personally don't like square boxes that much, I like a little bit of roundness in them. We can make our borders rounded by setting the border-radius attribute like so:
+
+```css
+.link {
+	border-radius: 3px;
+}
+```
+
+This will give us very subtly rounded edges around our border. 
 
 HOME
 -> First show how to use img tag with src="some link from online"
