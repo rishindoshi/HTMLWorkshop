@@ -68,7 +68,7 @@ p {
 }
 ```
 
-In the HTML, we added this mysterious **class="whaddupText"** line. This allows us to specify style for specific elements in our HTML. You can assign a **class** to any tag in HTML, and set its corresponding style in CSS by prefacing the classname with a "." and adding whatever featues you want. In this case, I made it so that all text in **p** tags have a font-size of 20 and use the Helvetica font. But, since only the first **p** tag has the **class="whaddupText"**, only the text within that first **p** tag will have a font-color of blue. Try opening the webpage and see what happened!
+In the HTML, we added this mysterious **class="whaddupText"** line. This allows us to specify style for specific elements in our HTML. You can assign a **class** to any tag in HTML, and set its corresponding style in CSS by prefacing the classname with a "." and adding whatever features you want. In this case, I made it so that all text in **p** tags have a font-size of 20 and use the Helvetica font. But, since only the first **p** tag has the **class="whaddupText"**, only the text within that first **p** tag will have a font-color of blue. Try opening the webpage and see what happened!
 
 Just for example's sake, let's assign a class to our first **li** tag and make it have a background color of red in our CSS. Let's also make all the text in our bullet list have a font-size of 30px. The following HTML and CSS snippets will accomplish this:
 
@@ -170,7 +170,7 @@ Now, create file called style.css in the same directory as home.html so we can s
 }
 ```
 
-So, there's a lot of new things going on here. First, set the text-decoration to none, which gets ride of the default underlines under all links in HTML. We then set the left and right margins of each of the links to **auto**. This tells the browser that, whatever the width of the screen, I want even margins on both the left and the right side of the element, which effectively centers it. We also set the font size, weight, and family to be more appealing than the HTML defaults. For the boder attribute, we specified three things. The first is 1px which is the thickness of the border, followed by specifying a solid line border, followed by the color of the border. The text-align: center attribute is fairly self-explanatory. I set the color of the border and the text to the hex color: **#f15f5d**, which is a light shade of red, but you can change this to anything you like. Just google hex color finder to find the code for the color you like most!
+So, there's a lot of new things going on here. First, set the text-decoration to none, which gets ride of the default underlines under all links in HTML. We then set the left and right margins of each of the links to **auto**. This tells the browser that, whatever the width of the screen, I want even margins on both the left and the right side of the element, which effectively centers it. We also set the font size, weight, and family to be more appealing than the HTML defaults. For the border attribute, we specified three things. The first is 1px which is the thickness of the border, followed by specifying a solid line border, followed by the color of the border. The text-align: center attribute is fairly self-explanatory. I set the color of the border and the text to the hex color: **#f15f5d**, which is a light shade of red, but you can change this to anything you like. Just google hex color finder to find the code for the color you like most!
 
 As the page stands now, it seems like the link text inside the border is too close to the border. Let's let the text breathe a little by using the **padding** attribute in CSS. Padding allows us to add space in between the text and the border. We can add padding to the top, bottom, left, and right of the text like so:
 
@@ -198,7 +198,7 @@ This will give us very subtly rounded edges around our border. Let's add one mor
 }
 ```
 
-it would tell the browser to increase the font-size of the link everytime the user hovers over the link with the mouse. Increasing the font-size is pretty obnoxious though, so let's instead invert the colors of the element like:
+it would tell the browser to increase the font-size of the link every time the user hovers over the link with the mouse. Increasing the font-size is pretty obnoxious though, so let's instead invert the colors of the element like:
 
 ```css 
 .link:hover {
@@ -290,13 +290,13 @@ I'm using a new tag here called the **div** tag. **Div** tags don't have any spe
 
 Most of the above attributes should look pretty familiar from the homepage style. We again use **auto** margins to center everything and we have a nice shade of light blue in our text boxes. Definitely feel free to change up the values and colors to see what you like best. The new attribute we used is **background-image**, which again is pretty self-explanatory. We just give CSS a URL and it applies the image at that URL to be the background of all the elements that are contained within its corresponding class tag.
 
-So, that's a pretty basic intro into HTML/CSS. I'd definitely suggest using the skills we learned today to complete the bio and miscellaneous portions of the website, or add more pages if you want. But, as you can probably see, using HTML/CSS to build more complex websites than the one we built today would get incredibely annoying and tedious. Lucky for web developers, there's a tool called Bootstrap that simplifies the process a lot while still allowing you to customize the website a good deal.
+So, that's a pretty basic intro into HTML/CSS. I'd definitely suggest using the skills we learned today to complete the bio and miscellaneous portions of the website, or add more pages if you want. But, as you can probably see, using HTML/CSS to build more complex websites than the one we built today would get incredibly annoying and tedious. Lucky for web developers, there's a tool called Bootstrap that simplifies the process a lot while still allowing you to customize the website a good deal.
 
 ## Bootstrap
 
 Try going to http://startbootstrap.com/template-categories/all/. Here you'll find several website templates that you can download for free and customize to your heart's content. Try downloading a theme that you like into a directory of your choosing and open up the index.html file in your browser. You'll see an extremely nice and well fleshed out site with generic content. You can go into the index.html file and edit the content to make the site personal to you. Take 10-15 minutes to customize one of the themes to make it your personal website. You can also edit or add your own CSS if you don't like how a particular element on the page is currently styled.
 
-One of the nicest features of Bootstrap is the column feature. Often times, it's really annoying to precisly positon HTML elements on a webpage using just CSS. So, Bootstrap came up with a useful, but kind of confusing, system for arranging elements of your HTML into columns on the page. Let's create two new files called columns.html and columns.css and paste the following HTML into columns.html:
+One of the nicest features of Bootstrap is the column feature. Often times, it's really annoying to precisely position HTML elements on a webpage using just CSS. So, Bootstrap came up with a useful, but kind of confusing, system for arranging elements of your HTML into columns on the page. Let's create two new files called columns.html and columns.css and paste the following HTML into columns.html:
 
 ```html
 <!DOCTYPE html>
@@ -313,7 +313,7 @@ One of the nicest features of Bootstrap is the column feature. Often times, it's
 </html>
 ```
 
-Boostrap is basically a library of pre-built CSS classes, just like the ones we built above, that we can assign to any of our HTML elements. There are a lot of useful classes that Bootstrap has to offer, but we'll be covering the ones that have to do with creating columns. The Boostrap system uses 12 columns to describe a webpage. We can make elements in HTML that extened any number of columns wide between 1 and 12 like so:
+Boostrap is basically a library of pre-built CSS classes, just like the ones we built above, that we can assign to any of our HTML elements. There are a lot of useful classes that Bootstrap has to offer, but we'll be covering the ones that have to do with creating columns. The Boostrap system uses 12 columns to describe a webpage. We can make elements in HTML that extend any number of columns wide between 1 and 12 like so:
 
 ```html
 <body>	
@@ -389,7 +389,7 @@ What we did here is create two columns, using the Bootstrap **col-lg-6** class, 
 
 ## Hosting
 
-As of now, we can only view the webpage we just created on our own machine. What we want is for the whole world to see it! So, we need some way of hosting the webpage on the internet, publically accessible to everyone. Luckily, github makes this really easy for us in just a few simple steps. Visit https://pages.github.com/ and follow the steps and your website should be online almost immediately!
+As of now, we can only view the webpage we just created on our own machine. What we want is for the whole world to see it! So, we need some way of hosting the webpage on the Internet, publicly accessible to everyone. Luckily, github makes this really easy for us in just a few simple steps. Visit https://pages.github.com/ and follow the steps and your website should be online almost immediately!
 
 
 
