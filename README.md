@@ -109,6 +109,42 @@ Let's start with the home.html page. So far we just have a blank html page:
 </html>
 ```
 
+We want to have three links to our pages, and HTML provides us with an **a** tag that will allow us to do this. Let's first create three new files in the same directory as home.html called: bio.html, quotes.html, misc.html. Now let's edit the above HTML inside the **body** tag:
+
+```html
+<body>
+	<a href="bio.html"> My Biography </a>
+	<a href="quotes.html"> My Favorite Movie Quotes </a>
+	<a href="misc.html"> Learn s'more about me! </a>
+</body>
+```
+
+So, there's a new tag I just introduced here called the anchor or **a** tag. These tags are meant to insert links into an HTML page. We tell the browser where to direct the viewer of the site when they click a link by setting the **href** attribute of the **a** tag. In this case, we direct users to each of our three pages that are part of the website. We also could have done something like:
+
+```html
+<a href="http://www.google.com"> CLICK TO GO TO GOOGLE </a>
+```
+
+and the browser would have directed us to google when we click the link. Alright, now let's also put some bare bones text in each of the three HTML files we just created so we'll actually see something when we click on each of the links from the homepage. Just copy and paste the following HTML into each of those three files:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Homepage</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="http://fonts.googleapis.com/css?family=Pacifico%7COpen+Sans:300,400,700" rel="stylesheet" type="text/css"/>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+	FILL ME IN LATER
+</body>
+</html>
+```
+Now try opening home.html in your browser and you should be able to click on any of the three links and the browser will take you to an HTML page that solely displays the "FILL ME IN LATER" text. 
+
+
 HOME
 -> First show how to use img tag with src="some link from online"
 -> Then show how to use a tags with src="some file in same dir as home.html"
