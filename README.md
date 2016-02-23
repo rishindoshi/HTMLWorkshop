@@ -5,6 +5,7 @@
 * https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes
 * https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_started
 * https://pages.github.com/
+* http://startbootstrap.com/template-categories/all/
 
 ## The Beginning
 
@@ -246,6 +247,9 @@ Now that our homepage is looking moderately fresh, let's move on to the favorite
 	<div class="movieQuote">
 		"I would like to extend to you an invitation to the pants party." - Brick Tamland from Anchorman
 	</div>
+	<div class="movieQuote">
+		"Anyone can cook!" - Chef Gusteau from Ratatouille
+	</div>
 </body>
 ```
 I'm using a new tag here called the **div** tag. **Div** tags don't have any special meaning in HTML, they're just used to assign style to a certain portion of text. For example, I wanted to give style to each of the above quotes, so I just put them inside a **div** tag so I could assign a class to them and therefore style the elements. Let's add style for the two new classes created above, **quoteHeader** and **movieQuote**:
@@ -280,25 +284,6 @@ Most of the above attributes should look pretty familiar from the homepage style
 So, that's a pretty basic intro into HTML/CSS. I'd definitely suggest using the skills we learned today to complete the bio and miscellaneous portions of the website, or add more pages if you want. But, as you can probably see, using HTML/CSS to build more complex websites than the one we built today would get incredibely annoying and tedious. Lucky for web developers, there's a tool called Bootstrap that simplifies the process a lot while still allowing you to customize the website a good deal.
 
 Try going to http://startbootstrap.com/template-categories/all/. Here you'll find several website templates that you can download for free and customize to your heart's content. Try downloading a theme that you like into a directory of your choosing and open up the index.html file in your browser. You'll see an extremely nice and well fleshed out site with generic content. You can go into the index.html file and edit the content to make the site personal to you. Take 10-15 minutes to customize one of the themes to make it your personal website. You can also edit or add your own CSS if you don't like how a particular element on the page is currently styled. 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
