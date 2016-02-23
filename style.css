@@ -1,4 +1,4 @@
-.picHeader {
+.homeImage {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
@@ -18,13 +18,8 @@ h3 {
 	font-weight: 200;
 }
 
-.linkList {
-	display: block;
-	margin: auto;
-}
-
 .link {
-	/*display: block;
+	display: block;
 	text-decoration: none;
 	padding-top: 15px;
 	padding-bottom: 15px;
@@ -41,32 +36,13 @@ h3 {
 	text-transform: uppercase;
 	text-align: center;
 	font-size: 16px;
-	font-weight: 700;*/
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 15px;
-	margin-bottom: 15px;
-	font-size: 16px;
-	font-family: Helvetica;
-	border: 1px solid #f15f5d;
-	text-align: center;
-	color: #f15f5d;
-	width: 20%;
-	text-decoration: none;
 	font-weight: 700;
-	padding-top: 15px;
-	padding-bottom: 15px;
-	padding-right: 30px;
-	padding-left: 30px;
-	border-radius: 3px;
-
 }
 
-/*.button:hover {
+.button:hover {
 	background-color: #f15f5d;
 	color: white;
-}*/
+}
 
 .projectContent {
 	display: inline-block;

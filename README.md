@@ -4,6 +4,7 @@
 * https://developer.mozilla.org/en-US/docs/Web/HTML/Element
 * https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes
 * https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_started
+* https://pages.github.com/
 
 ## The Beginning
 
@@ -167,7 +168,7 @@ Now we can go to our style.css file and start adding stylistic elements to all t
 }
 ```
 
-So, there's a lot of new things going on here. First, set the text-decoration to none, which gets ride of the default underlines under all links in HTML. We then set the left and right margins of each the links to **auto**. This tells the browser that, whatever the width of the screen, I want even margins on both the left and the right side of the element, effectively centering it. We also set the font size, weight, and family to be more appealing. For the boder attribute, we specified three things. The first is 1px which is the thickness of the border, followed by a solid line border, followed by the color of the border. The text-align: center attribute is fairly self-explanatory. I set the color of the border and the text to the hex color **#f15f5d**, which is a light shade of red, but you can change this to anything you like. Just google hex color finder to find the code for the color you like most!
+So, there's a lot of new things going on here. First, set the text-decoration to none, which gets ride of the default underlines under all links in HTML. We then set the left and right margins of each of the links to **auto**. This tells the browser that, whatever the width of the screen, I want even margins on both the left and the right side of the element, which effectively centers it. We also set the font size, weight, and family to be more appealing than the HTML defaults. For the boder attribute, we specified three things. The first is 1px which is the thickness of the border, followed by specifying a solid line border, followed by the color of the border. The text-align: center attribute is fairly self-explanatory. I set the color of the border and the text to the hex color: **#f15f5d**, which is a light shade of red, but you can change this to anything you like. Just google hex color finder to find the code for the color you like most!
 
 As the page stands now, it seems like the link text inside the border is too close to the border. Let's let the text breathe a little by using the **padding** attribute in CSS. Padding allows us to add space in between the text and the border. We can add padding to the top, bottom, left, and right of the text like so:
 
@@ -204,7 +205,32 @@ it would tell the browser to increase the font-size of the link everytime the us
 }
 ```
 
-So, now when a user hovers their mouse on any of the link boxes, the background-color will turn the light shade of red, and the text color will turn white. This adds a nice user experience effect.
+So, now when a user hovers their mouse on any of the link boxes, the background-color will turn the light shade of red, and the text color will turn white. This adds a nice user experience effect. Let's now spruce the homepage up a bit more by adding an image of your choosing. Above the links section in the HTML, let's insert an **img** tag which lets us insert images into the webpage:
+
+```html
+<img src="<url of image you want here>" class="homeImage"/>
+<a href="bio.html" class="link"> My Biography </a>
+<a href="quotes.html" class="link"> My Favorite Movie Quotes </a>
+<a href="misc.html" class="link"> Learn s'more about me! </a>
+```
+
+Inside the **src** attribute of the **img** tag, insert a link to an image (from google, or flickr, or any other website) that you want to appear on your home page. The image may appear to a little awkwardly positioned and sized on the page, so we'll use CSS to make sure it's the right size and nicely aligned in the center of the page with all the links. We're going to create new CSS class called **homeImage** in style.css and add some margin and width attributes:
+
+```css
+.homeImage {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width: 20%;
+}
+```
+
+Here, we again set the margin left and right attributes to be **auto** so the browser can just center the image for us. We also set its margin bottom and top attributes so the image doesn't stick to the top of the page and there's some space between the image and the first link. I personally like the width of my image to take up 20% of the screen, but you can play around with all the above values of the attributes to see what suits you best!
+
+
+
 
 
 
