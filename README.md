@@ -9,7 +9,7 @@
 
 ## The Beginning
 
-We're going to begin our journey into HTML with the beginner.html file. Let's take a look at the following snippet from the file:
+We're going to begin our journey into HTML with the beginner.html file. Create a directory somewhere on your system and create a file called beginner.html within that directory. Copy and paste the following snippet of HTML into beginner.html:
 
 ```html
 <!DOCTYPE html>
@@ -17,7 +17,7 @@ We're going to begin our journey into HTML with the beginner.html file. Let's ta
 <head>
 	<title>Homepage</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="style.css"/>
+	<link rel="stylesheet" type="text/css" href="beginner.css"/>
 </head>
 <body>
 	<h1> WHADDUP </h1>
@@ -28,15 +28,16 @@ We're going to begin our journey into HTML with the beginner.html file. Let's ta
 		<li> whaddup </li>
 		<li> whaddup </li>
 	</ul>
+	<img src="https://i1.sndcdn.com/artworks-000138786392-3da84t-t500x500.jpg" alt="suh dude"/>
 </body>
 </html>
 ```
 
 You can think of HTML as a set of rules that dictates how a webpage will be formatted and presented. These "rules" come in the form of "tags". When your browser is loading an HTML page, it goes through the above chunk of HTML, and structures the webpage that we will see based off these tags. The **html** tag tells the browser that we're dealing with an HTML document, and the **body** tag is where we'll be putting all the website's displayable content. We'll come back to the **head** tag later. Try going to your browser and click **File->Open File**, then navigate to where your beginner.html file is located and click **Open**. 
 
-As you can see, all the "whaddup"s we placed in our body tag are showing up on the webpage. But, the way these "whaddup"s are arranged on the page and how they appear to the viewer is dictated by each of the **tags** we put around each "whaddup". The first tag is the **h1**, or heading, tag. Pretty self-explanatory, it just tells the browser to make the text surrounded by the tag to be the heading of the page. The second tag is the **h2** tag. This tag is essentially a toned down version of **h1**. The third tag is the **p**, or paragraph. Generally, big chunks of readable text are supposed to go inside **p** tags, hence the long sequence of "whaddup"s. The **ul** tag stands for unordered list. They're meant for lists of text, hence we see each "whaddup" preceded by a bullet point.
+As you can see, all the "whaddup"s we placed in our body tag are showing up on the webpage. But, the way these "whaddup"s are arranged on the page and how they appear to the viewer is dictated by each of the **tags** we put around each "whaddup". The first tag is the **h1**, or heading, tag. Pretty self-explanatory, it just tells the browser to make the text surrounded by the tag to be the heading of the page. The second tag is the **h2** tag. This tag is essentially a toned down version of **h1**. The third tag is the **p** tag, or paragraph tag. Generally, big chunks of readable text are supposed to go inside **p** tags, hence the long sequence of "whaddup"s. The **ul** tag stands for unordered list. They're meant for lists of text, hence we see each "whaddup" preceded by a bullet point. Next, we have the **img** tag, which tells the browser to insert the image from the url inside the **src=""** part of the tag. 
 
-So, those are some of the most basic tags we can use in HTML. Now that we're getting a sense of how HTML is used to structure content on a webpage, let's dive into some of the more interesting elements of making a webpage, namely CSS. CSS stands for Cascading Style Sheets, and it's used to style a webpage. It allows us to do things like set the font size and type of text, use background colors and images, set margins for the page, and many others. Let's take a look at some example CSS:
+So, those are some of the most basic tags we can use in HTML. Now that we're getting a sense of how HTML is used to structure content on a webpage, let's dive into some of the more interesting elements of making a webpage, namely CSS. CSS stands for Cascading Style Sheets, and it's used to style a webpage. It allows us to do things like set the font size and type of text, use background colors and images, set margins for the page, and position elements on a webpage to where we want them to go. Let's take a look at some example CSS:
 
 ```css
 p {
@@ -47,7 +48,7 @@ p {
 }
 ```
 
-The above CSS snippet applies all the stylistic elements within the curly braces to every piece of text surrounded by a **p** tag in our HTML document. Using the previous HTML example, all the "whaddup"s within the **p** tag would now have a font size of 40 and have a blue text color. But, what if we don't want to change the font size and color of **all p** elements on our webpage, only specific ones? Let's modify the above HTML a little:
+Create a file called beginner.css in the same directory as beginner.html and paste the above snippet into the beginner.css file. The above CSS applies all the stylistic elements within the curly braces to every piece of text surrounded by a **p** tag in our HTML document. Using the previous HTML example, all the "whaddup"s within the **p** tag would now have a font size of 40 and have a blue text color. But, what if we don't want to change the font size and color of **all p** elements on our webpage, only specific ones? Let's modify the above HTML a little:
 
 ```html
 <p class="whaddupText"> whaddup whaddup whaddup whaddup. whaddup? whaddup! </p>
@@ -91,9 +92,9 @@ So, this was a very bare bones introduction into HTML and CSS. Both of the two l
 
 ## Personal Site
 
-We're going to be building a personal website with four pages including a home page, a bio/resume page, a favorite movie quotes page, and a miscellaneous page with whatever your heart desires on it. The homepage will link to the the other three pages, and the other three pages will link back to the home page. All the pages are going to have a similar feel to them in terms of design and style, so we'll be making several CSS classes to help us do this.
+We're going to be building a personal website with four pages including a home page, a bio/resume page, a favorite movie quotes page, and a miscellaneous page with whatever your heart desires on it. The homepage will link to the the other three pages, and the other three pages will link back to the home page. All the pages are going to have a similar feel to them in terms of design and style, so we'll be making several CSS classes to help us do this. We'll build the homepage and the movie quotes together, and then you should be able to use what you learned to build the other two pages.
 
-Let's start with the home.html page. So far we just have a blank html page:
+Start by creating a home.html file, again in the same directory as the two beginner files, and paste the below HTML into home.html.
 
 ```html
 <!DOCTYPE html>
@@ -125,7 +126,7 @@ So, there's a new tag I just introduced here called the anchor or **a** tag. The
 <a href="http://www.google.com"> CLICK TO GO TO GOOGLE </a>
 ```
 
-and the browser would have directed us to google when we click the link. Alright, now let's also put some bare bones text in each of the three HTML files we just created so we'll actually see something when we click on each of the links from the homepage. Just copy and paste the following HTML into each of those three files:
+and the browser would have directed us to google when we click the link. Alright, now let's also put a little text in each of the three HTML files we just created so we'll actually see something when we click on each of the links from the homepage. Just copy and paste the following HTML into each of those three files:
 
 ```html
 <!DOCTYPE html>
@@ -149,7 +150,7 @@ Now try opening home.html in your browser and you should be able to click on any
 <a href="misc.html" class="link"> Learn s'more about me! </a>
 ```
 
-Now we can go to our style.css file and start adding stylistic elements to all the above links. First, let's make the links have a nicer and bigger font, be centered on the page, and put some nice borders on the links. We can edit the style.css like so to accomplish this:
+Now, create file called style.css in the same directory as home.html so we can start prettyfying our webpage. First, let's make the links have a nicer and bigger font, be centered on the page, and put some nice borders on the links. We can edit the style.css like so to accomplish this:
 
 ```css
 .link {
