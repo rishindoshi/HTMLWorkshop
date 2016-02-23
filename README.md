@@ -284,7 +284,11 @@ Most of the above attributes should look pretty familiar from the homepage style
 
 So, that's a pretty basic intro into HTML/CSS. I'd definitely suggest using the skills we learned today to complete the bio and miscellaneous portions of the website, or add more pages if you want. But, as you can probably see, using HTML/CSS to build more complex websites than the one we built today would get incredibely annoying and tedious. Lucky for web developers, there's a tool called Bootstrap that simplifies the process a lot while still allowing you to customize the website a good deal.
 
+## Bootstrap
+
 Try going to http://startbootstrap.com/template-categories/all/. Here you'll find several website templates that you can download for free and customize to your heart's content. Try downloading a theme that you like into a directory of your choosing and open up the index.html file in your browser. You'll see an extremely nice and well fleshed out site with generic content. You can go into the index.html file and edit the content to make the site personal to you. Take 10-15 minutes to customize one of the themes to make it your personal website. You can also edit or add your own CSS if you don't like how a particular element on the page is currently styled. 
+
+## Hosting
 
 As of now, we can only view the webpage we just created on our own machine. What we want is for the whole world to see it, so we need some way of hosting the webpage on the internet, publically accessible to everyone. Luckily, github makes this really easy for us in just a few simple steps. Visit https://pages.github.com/ and follow the steps and your website should be online almost immediately!
 
